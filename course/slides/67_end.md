@@ -1,0 +1,1 @@
+![git cloud](/course/assets/git.png) <!-- .element: class="transparent-image" style="height: 500px"-->

@@ -1,0 +1,54 @@
+[submodule "course/examples/bisect"]
+	path = course/examples/bisect
+	url = git@github.com:treeskar/git-course-example-bisect.git
+[submodule "course/examples/blame"]
+	path = course/examples/blame
+	url = git@github.com:treeskar/git-course-example-blame.git
+[submodule "course/examples/packfile"]
+	path = course/examples/packfile
+	url = git@github.com:treeskar/git-course-example-packfile.git
+[submodule "course/examples/filter-branch"]
+	path = course/examples/filter-branch
+	url = git@github.com:treeskar/git-course-example-filter-branch.git
+[submodule "course/examples/patch"]
+	path = course/examples/patch
+	url = git@github.com:treeskar/git-course-example-patch.git
+[submodule "course/examples/rerere"]
+	path = course/examples/rerere
+	url = git@github.com:treeskar/git-course-example-rerere.git
+[submodule "course/examples/reflog"]
+	path = course/examples/reflog
+	url = git@github.com:treeskar/git-course-example-reflog.git
+[submodule "course/examples/hooks"]
+	path = course/examples/hooks
+	url = git@github.com:treeskar/git-course-example-hooks.git
+[submodule "course/examples/rebase"]
+	path = course/examples/rebase
+	url = git@github.com:treeskar/git-course-example-rebase.git
+[submodule "course/examples/diverged-history"]
+	path = course/examples/diverged-history
+	url = git@github.com:treeskar/git-course-example-diverged-history.git
+[submodule "course/examples/merge-ff"]
+	path = course/examples/merge-ff
+	url = git@github.com:treeskar/git-course-example-merge-ff.git
+[submodule "course/examples/merge-octopus"]
+	path = course/examples/merge-octopus
+	url = git@github.com:treeskar/git-course-example-merge-octopus.git
+[submodule "course/examples/rebase-interactive"]
+	path = course/examples/rebase-interactive
+	url = git@github.com:treeskar/git-course-example-rebase-interactive.git
+[submodule "course/examples/lfs"]
+	path = course/examples/lfs
+	url = git@github.com:treeskar/git-course-example-lfs.git
+[submodule "course/examples/rebase-onto"]
+	path = course/examples/rebase-onto
+	url = git@github.com:treeskar/git-course-example-rebase-onto.git
+[submodule "course/examples/replace"]
+	path = course/examples/replace
+	url = git@github.com:treeskar/git-course-example-replace.git
+[submodule "course/examples/subtree"]
+	path = course/examples/subtree
+	url = git@github.com:treeskar/git-course-example-subtree.git
+[submodule "course/examples/merge-recursive"]
+	path = course/examples/merge-recursive
+	url = git@github.com:treeskar/git-course-example-merge-recursive.git

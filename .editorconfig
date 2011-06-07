@@ -1,0 +1,5 @@
+[*.{js,md,json}]
+charset = utf-8
+
+[*.js,json]
+indent_style = tab

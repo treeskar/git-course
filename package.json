@@ -1,0 +1,55 @@
+{
+  "name": "git-internals-course",
+  "version": "3.7.0",
+  "description": "Git Internals Course",
+  "main": "js/reveal.js",
+  "scripts": {
+    "test": "grunt test",
+    "start": "grunt serve",
+    "build": "grunt",
+    "client": "http-server -p 8000",
+    "multiplex": "node plugin/multiplex",
+    "rebuild:git:server": "sh rebuild-git-server.sh",
+    "git:server": "docker run -d -v `pwd`/course/examples/remote:/srv/git -v `pwd`/git-lfs:/lfs-data -P -p 3231:22 -p 3232:9418 -p 3233:8080 --name git_server git_server",
+    "lfs:server": "LFS_ADMINPASS=admin LFS_ADMINUSER=admin && export LFS_ADMINPASS LFS_ADMINUSER && ~/go/src/github.com/github/lfs-test-server/lfs-test-server",
+    "present": "concurrently \"npm run client\" \"open 'http://127.0.0.1:8000/master.html' && npm run multiplex\""
+  },
+  "author": {
+    "name": "Alexander Faitelson",
+    "email": "treeskar@gmail.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/treeskar/git-course.git"
+  },
+  "engines": {
+    "node": ">=4.0.0"
+  },
+  "devDependencies": {
+    "express": "^4.16.2",
+    "grunt": "^1.0.1",
+    "grunt-autoprefixer": "^3.0.4",
+    "grunt-cli": "^1.2.0",
+    "grunt-contrib-connect": "^1.0.2",
+    "grunt-contrib-cssmin": "^2.2.1",
+    "grunt-contrib-jshint": "^1.1.0",
+    "grunt-contrib-qunit": "^2.0.0",
+    "grunt-contrib-uglify": "^3.3.0",
+    "grunt-contrib-watch": "^1.0.0",
+    "grunt-sass": "^2.0.0",
+    "grunt-retire": "^1.0.7",
+    "grunt-zip": "~0.17.1",
+    "mustache": "^2.3.0",
+    "socket.io": "^1.7.3"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "concurrently": "^4.0.1",
+    "console.table": "^0.10.0",
+    "http-server": "^0.11.1",
+    "mocha": "^5.2.0",
+    "simple-git": "^1.105.0",
+    "static": "^2.0.0",
+    "yargs": "^12.0.2"
+  }
+}
